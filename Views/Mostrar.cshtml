@@ -1,0 +1,25 @@
+﻿@using AccAcademyBookStore
+@model List<Genres>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mostrar</title>
+</head>
+<body>
+    <div> 
+        <h1>Generos: </h1>
+        <ul>
+            @foreach (Genres genero in this.Model)
+            {
+                <li>genero.Genre</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
